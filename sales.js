@@ -10,15 +10,20 @@ function addItem()
   	alert("Enter price as a number");
   }
   //OTHERWISE,
-  //else{
+  else{
   // update newItem to its value cast as a number
-  //newItem = 
+  newItem = Number(newItem); 
   // update runningTotal to be its value plus newItem
+  runningTotal += newItem;
   // create a variable called dollars
+  var dollars;
   // call asCurrency() by with the value of runningTotal and assign the return value to dollars
+  dollars = asCurrency(runningTotal);
   // update the innerHTML of the span with the id "subtotal" to be dollars
   // update the value of the input with the id "price" to be an empty string
+  document.getElementById("price").value = "";
   // update a cookie called "preTax" with the value of runningTotal
+  setCookie(preTax, runningTotal, 0);
 }
 
 //takes a number and gives a string with the number displayed as USD currency
