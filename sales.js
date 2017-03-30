@@ -23,7 +23,7 @@ function addItem()
   // update the value of the input with the id "price" to be an empty string
   document.getElementById("price").value = "";
   // update a cookie called "preTax" with the value of runningTotal
-  setCookie(preTax, runningTotal, 0);
+  setCookie("preTax", runningTotal, 0);
   }
 }
 
