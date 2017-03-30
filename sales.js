@@ -24,6 +24,7 @@ function addItem()
   document.getElementById("price").value = "";
   // update a cookie called "preTax" with the value of runningTotal
   setCookie(preTax, runningTotal, 0);
+  }
 }
 
 //takes a number and gives a string with the number displayed as USD currency
